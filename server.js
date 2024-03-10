@@ -16,7 +16,7 @@ const protoConfig = grpc.loadPackageDefinition(packageDefinition).config;
  * Implements the SayHello RPC method.
  */
 function sayHello(call, callback) {
-    console.log('Got request from client', call);
+    console.log('Got request from client');
     callback(null, {message: 'Hello ' + call.request.name});
 }
 
