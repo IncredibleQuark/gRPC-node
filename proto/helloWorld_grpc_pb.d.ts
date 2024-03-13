@@ -24,7 +24,7 @@ interface IHelloWorldService_ISayHello extends grpc.MethodDefinition<helloWorld_
 export const HelloWorldService: IHelloWorldService;
 
 export interface IHelloWorldServer extends grpc.UntypedServiceImplementation {
-    [sayHello: string]: grpc.handleUnaryCall<helloWorld_pb.HelloWorldRequest, helloWorld_pb.HelloWorldReply>;
+    sayHello: grpc.handleUnaryCall<helloWorld_pb.HelloWorldRequest, helloWorld_pb.HelloWorldReply>;
 }
 
 export interface IHelloWorldClient {
