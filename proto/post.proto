@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+package post;
+
+import "google/protobuf/empty.proto";
+
+enum PostStatus {
+  DRAFT = 0;
+  PUBLISHED = 1;
+  ARCHIVED = 2;
+}
+
+message PostReply {
+  int32 id = 1;
+  string title = 2;
+  PostStatus status = 3;
+  bool is_deleted = 4;
+}
+
+service Post {
+  rpc GetPosts (google.protobuf.Empty) returns (stream PostReply) {}
+}

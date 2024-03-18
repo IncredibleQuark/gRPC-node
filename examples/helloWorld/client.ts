@@ -1,6 +1,6 @@
-import {HelloWorldClient} from "./proto/helloWorld_grpc_pb";
+import {HelloWorldClient} from "../../proto/helloWorld_grpc_pb";
 import {credentials, ServiceError} from "@grpc/grpc-js";
-import {HelloWorldReply, HelloWorldRequest} from "./proto/helloWorld_pb";
+import {HelloWorldReply, HelloWorldRequest} from "../../proto/helloWorld_pb";
 
 
 const client = new HelloWorldClient(
