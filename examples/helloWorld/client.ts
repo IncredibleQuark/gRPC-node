@@ -4,7 +4,7 @@ import {HelloWorldReply, HelloWorldRequest} from "../../proto/helloWorld_pb";
 
 
 const client = new HelloWorldClient(
-    `localhost:50053`,
+    `localhost:50052`,
     credentials.createInsecure()
 );
 
