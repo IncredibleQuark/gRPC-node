@@ -14,5 +14,17 @@ server.bindAsync('localhost:50052', ServerCredentials.createInsecure(), (err: Er
     if (err) {
         console.error(err);
     }
-    console.log(`Listening on port ${port}`);
+    console.log(`Not secure server listening on port ${port}`);
 });
+
+
+// const server2: Server = new Server();
+// // @ts-ignore:next-line
+// server2.addService(HelloWorldServiceType, new HelloWorldService());
+//
+// server2.bindAsync('localhost:50053', ServerCredentials.(), (err: Error | null, port: number) => {
+//     if (err) {
+//         console.error(err);
+//     }
+//     console.log(`Secure server listening on port ${port}`);
+// });
