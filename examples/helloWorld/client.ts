@@ -4,7 +4,7 @@ import {HelloWorldReply, HelloWorldRequest} from "../../proto/helloWorld_pb";
 
 
 const client = new HelloWorldClient(
-    `localhost:50052`,
+    `localhost:50054`,
     credentials.createInsecure()
 );
 
@@ -12,8 +12,8 @@ function run() {
     const request = new HelloWorldRequest();
     request.setName('John Johnson')
     client.sayHello(request, (err: ServiceError | null, response: HelloWorldReply) => {
-        console.log('----------  GOT RESPONSE FROM SERVER ----------')
-        console.log(response.getMessage())
+        console.log('----------  GOT RESPONSE FROM SERVER ----------');
+        console.log(response.getMessage());
     });
 }
 

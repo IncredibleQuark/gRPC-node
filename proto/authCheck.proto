@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package authCheck;
+
+import "google/protobuf/empty.proto";
+
+
+message AuthCheckReply {
+  int32 status = 1;
+}
+
+service AuthCheck {
+  rpc GetAuthStatus (google.protobuf.Empty) returns (AuthCheckReply) {}
+}

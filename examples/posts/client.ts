@@ -7,7 +7,7 @@ import * as post_pb from "../../proto/post_pb";
 
 
 const client = new PostClient(
-    `localhost:50052`,
+    `localhost:50053`,
     credentials.createInsecure()
 );
 

@@ -1,3 +1,13 @@
 node_modules
 .idea/
 package-lock.json
+
+#Certs
+/certs/ca.crt
+/certs/ca.key
+/certs/client.crt
+/certs/client.csr
+/certs/client.key
+/certs/server.crt
+/certs/server.csr
+/certs/server.key

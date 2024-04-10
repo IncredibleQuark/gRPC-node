@@ -1,5 +1,6 @@
 PROTO_DIR=./proto
 
+echo "Generating .js and .ts files from .proto ..."
 
 grpc_tools_node_protoc \
 --js_out=import_style=commonjs,binary:${PROTO_DIR} \
@@ -14,4 +15,7 @@ grpc_tools_node_protoc \
 --ts_out=grpc_js:${PROTO_DIR} \
 -I ./proto \
 ${PROTO_DIR}/*.proto
+
+
+echo "Generating files completed."
 

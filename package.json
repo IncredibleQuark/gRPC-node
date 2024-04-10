@@ -5,10 +5,13 @@
   "main": "server.ts",
   "scripts": {
     "build": "sh proto/build.sh",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "server": "tsx watch ./server.ts",
+    "generateCerts": "certs/generate_certs.sh",
+    "helloWorldServer": "tsx watch examples/helloWorld/server.ts",
     "helloWorld": "tsx examples/helloWorld/client.ts",
-    "posts": "tsx examples/posts/client.ts"
+    "postsServer": "tsx examples/posts/server.ts",
+    "posts": "tsx examples/posts/client.ts",
+    "authCheckServer": "tsx examples/authCheck/server.ts",
+    "authCheck": "tsx examples/authCheck/client.ts"
   },
   "author": "Łukasz Kupiński",
   "license": "ISC",
