@@ -42,3 +42,11 @@ Then as usual start server and client, it will send a simple request and receive
 Start the server with ``npm run authCheckServer``
 
 Run example with ``npm run authCheck``
+
+#### Interceptor
+This demonstrates how to intercept incoming requests to server and outgoing responses from server and apply additional logic
+in between, for example logging or authorization.
+
+Start the server with ``npm run interceptorServer``
+
+Run example with: ``npm run interceptor``
