@@ -11,7 +11,9 @@
     "postsServer": "tsx examples/posts/server.ts",
     "posts": "tsx examples/posts/client.ts",
     "authCheckServer": "tsx examples/authCheck/server.ts",
-    "authCheck": "tsx examples/authCheck/client.ts"
+    "authCheck": "tsx examples/authCheck/client.ts",
+    "interceptorServer": "tsx examples/interceptor/server.ts",
+    "interceptor": "tsx examples/interceptor/client.ts"
   },
   "author": "Łukasz Kupiński",
   "license": "ISC",

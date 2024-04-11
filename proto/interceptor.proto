@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package interceptor;
+
+import "google/protobuf/empty.proto";
+
+service Interceptor {
+  rpc getNothing (google.protobuf.Empty) returns (google.protobuf.Empty) {}
+}
